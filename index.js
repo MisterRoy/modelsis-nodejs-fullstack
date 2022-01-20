@@ -5,6 +5,9 @@ const logger = require('./logger/logger');
 const cors = require('cors');
 const config = require('config');
 const { connectToDatabase } = require('./startup/database');
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+const swaggerOptions = require('./doc/swagger');
 
 const app = express();
 
@@ -29,6 +32,10 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/products', products);
 app.use('/api/productType', productTypes);
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+app.use('/api', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.listen(runningPort, () =>
   logger.info(`Listening on port ${runningPort} ...`)
