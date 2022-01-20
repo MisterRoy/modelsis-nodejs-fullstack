@@ -16,7 +16,7 @@ const productSchema = mongoose.Schema({
 });
 
 // Compiling schema into a model
-const Product = mongoose.model("Produt", productSchema);
+const Product = mongoose.model("produt", productSchema);
 
 function validateProduct(product) {
   const schema = Joi.object({

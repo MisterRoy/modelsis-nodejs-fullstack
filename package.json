@@ -10,8 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "joi": "^17.5.0",
-    "mongoose": "^6.1.7"
+    "mongoose": "^6.1.7",
+    "winston": "^3.4.0"
   }
 }

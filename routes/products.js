@@ -2,6 +2,7 @@ const express = require("express");
 const { Product, validateProduct } = require("../models/product");
 const { ProductType } = require("../models/productType");
 const router = express.Router();
+const logger = require("../logger/logger");
 
 router.get("/", async (req, res) => {
   try {
@@ -17,12 +18,11 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    const product = await Product.find({ _id: req.params.id });
-    if (!product) return res.status(404).send("Product not found");
-
+    const product = await Product.findById(req.params.id);
+	
     res.status(200).send(product);
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
     res.status(404).send("Product not found");
   }
 });
@@ -43,6 +43,7 @@ router.post("/", async (req, res) => {
     const productTypeExists = await ProductType.exists({
       name: req.body.type,
     });
+	console.log(productTypeExists);
     if (!productTypeExists)
       return res.status(400).send("This product type is invalid");
 
@@ -56,6 +57,7 @@ router.post("/", async (req, res) => {
     // Insert into database
     await product.save();
 
+    logger.info(`Product ${product._id} created`);
     res.status(201).send(product);
   } catch (e) {
     res.status(500).send("Internal error");
@@ -66,6 +68,7 @@ router.delete("/:id", async (req, res) => {
   try {
     const product = await Product.findByIdAndRemove(req.params.id);
     if (!product) return res.status(404).send("The provided id is invalid");
+	logger.info(`Product ${product._id} deleted`);
     res.status(200).send(product);
   } catch (e) {
     res.status(500).send("Error");
@@ -90,9 +93,10 @@ router.put("/:id", async (req, res) => {
       { new: true }
     );
 
+    logger.info(`Product ${product._id} updated`);
     res.status(200).send(product);
   } catch (e) {
-    res.status(500).send("The provided id is invalid");
+    res.status(400).send("The provided id is invalid");
   }
 });
 
