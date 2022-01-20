@@ -265,3 +265,4 @@
 14:24:36 20/01/2022 [API] WARN: Using default configuration
 14:24:36 20/01/2022 [API] INFO: Connected to MongoDB
 14:24:36 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:33:02 20/01/2022 [API] INFO: Product type Electronic component created
