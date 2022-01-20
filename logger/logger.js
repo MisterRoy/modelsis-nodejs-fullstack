@@ -1,4 +1,4 @@
-const { createLogger, format, transports } = require("winston");
+const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, printf } = format;
 
 const myFormat = printf(({ level, message, label, timestamp }) => {
@@ -8,13 +8,13 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
 const logger = createLogger({
   format: combine(
     // format.colorize(),
-    label({ label: "API" }),
-    timestamp({ format: "HH:mm:ss DD/MM/YYYY" }),
+    label({ label: 'API' }),
+    timestamp({ format: 'HH:mm:ss DD/MM/YYYY' }),
     myFormat
   ),
   transports: [
     new transports.Console(),
-    new transports.File({ filename: "logs.txt" }),
+    new transports.File({ filename: 'logs.txt' }),
   ],
 });
 

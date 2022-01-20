@@ -1,21 +1,21 @@
-const express = require("express");
-const { validateProductType, ProductType } = require("../models/productType");
+const express = require('express');
+const { validateProductType, ProductType } = require('../models/productType');
 const router = express.Router();
-const logger = require("../logger/logger");
+const logger = require('../logger/logger');
 
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const productTypes = await ProductType.find();
-    if (!productTypes) return res.status(404).send("Products not found");
+    if (!productTypes) return res.status(404).send('Products not found');
 
     res.status(200).send(productTypes);
   } catch (e) {
-    console.log(e.message);
-    res.status(400).send("An error ocurred");
+    logger.error(e.message);
+    res.status(400).send('An error ocurred');
   }
 });
 
-router.post("/", async (req, res) => {
+router.post('/', async (req, res) => {
   const { error } = validateProductType(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -25,7 +25,7 @@ router.post("/", async (req, res) => {
       name: req.body.name,
     });
     if (alreadyExists)
-      return res.status(400).send("This product type already exists");
+      return res.status(400).send('This product type already exists');
 
     // Create a new product type
     const productType = new ProductType({
@@ -39,7 +39,8 @@ router.post("/", async (req, res) => {
     logger.info(`Product type ${productType.name} created`);
     res.status(201).send(productType);
   } catch (e) {
-    res.status(500).send("Internal error" + e.message);
+    logger.error(e.message);
+    res.status(500).send('Internal error' + e.message);
   }
 });
 

@@ -127,3 +127,141 @@
 09:38:20 20/01/2022 [API] INFO: Product 61e8405d126b322f6d2eb81e updated
 09:42:15 20/01/2022 [API] INFO: Listening on port 4000 ...
 09:42:15 20/01/2022 [API] INFO: Connected to MongoDB
+09:53:18 20/01/2022 [API] INFO: Listening on port 4000 ...
+09:53:18 20/01/2022 [API] INFO: Connected to MongoDB
+09:53:21 20/01/2022 [API] INFO: Listening on port 4000 ...
+09:53:21 20/01/2022 [API] INFO: Connected to MongoDB
+10:01:12 20/01/2022 [API] INFO: Product 61e8405d126b322f6d2eb81e updated
+10:06:46 20/01/2022 [API] INFO: Listening on port 4000 ...
+10:06:46 20/01/2022 [API] INFO: Connected to MongoDB
+10:07:12 20/01/2022 [API] INFO: Listening on port 4000 ...
+10:07:12 20/01/2022 [API] INFO: Connected to MongoDB
+10:08:28 20/01/2022 [API] INFO: Product 61e92bf1430ec98d2e61510b updated
+10:10:19 20/01/2022 [API] INFO: Product 61e92bf1430ec98d2e61510b updated
+10:36:22 20/01/2022 [API] INFO: Product 61e8405d126b322f6d2eb81e deleted
+10:36:49 20/01/2022 [API] INFO: Product 61e84144917675f3679e856e deleted
+10:37:05 20/01/2022 [API] INFO: Product 61e8b197917675f3679e86c1 deleted
+10:39:21 20/01/2022 [API] INFO: Product 61e92bf1430ec98d2e61510b updated
+10:39:26 20/01/2022 [API] INFO: Product 61e92bf1430ec98d2e61510b updated
+10:39:31 20/01/2022 [API] INFO: Product 61e92bf1430ec98d2e61510b updated
+11:12:15 20/01/2022 [API] INFO: Product 61e9438f1895d2b937256571 created
+11:26:24 20/01/2022 [API] INFO: Product 61e9438f1895d2b937256571 deleted
+11:32:05 20/01/2022 [API] INFO: Product 61e92bf1430ec98d2e61510b deleted
+11:33:17 20/01/2022 [API] INFO: Product 61e9487d1895d2b9372565a1 created
+11:33:20 20/01/2022 [API] INFO: Product 61e9487d1895d2b9372565a1 deleted
+11:37:51 20/01/2022 [API] INFO: Product type Youtou created
+11:38:22 20/01/2022 [API] INFO: Product type Youyou created
+11:39:03 20/01/2022 [API] INFO: Product type Heyhq created
+11:40:14 20/01/2022 [API] INFO: Product type 1 created
+11:40:25 20/01/2022 [API] INFO: Product type 2 created
+11:40:37 20/01/2022 [API] INFO: Product type 3 created
+11:40:55 20/01/2022 [API] INFO: Product type 4 created
+11:42:57 20/01/2022 [API] INFO: Product type ç created
+11:46:10 20/01/2022 [API] INFO: Product 61e94b821895d2b9372565d3 created
+11:47:20 20/01/2022 [API] INFO: Product 61e84089126b322f6d2eb823 updated
+11:47:50 20/01/2022 [API] INFO: Product 61e84089126b322f6d2eb823 updated
+11:47:59 20/01/2022 [API] INFO: Product 61e84089126b322f6d2eb823 updated
+11:48:04 20/01/2022 [API] INFO: Product 61e84089126b322f6d2eb823 deleted
+11:50:26 20/01/2022 [API] INFO: Product type Test created
+12:30:39 20/01/2022 [API] INFO: Product 61e955ef1895d2b937256615 created
+12:38:31 20/01/2022 [API] INFO: Product 61e955ef1895d2b937256615 deleted
+12:38:37 20/01/2022 [API] INFO: Product 61e94b821895d2b9372565d3 updated
+12:38:43 20/01/2022 [API] INFO: Product 61e957d31895d2b937256628 created
+13:04:10 20/01/2022 [API] INFO: Listening on port 4000 ...
+13:04:10 20/01/2022 [API] INFO: Connected to MongoDB
+13:04:19 20/01/2022 [API] INFO: Listening on port 4000 ...
+13:04:19 20/01/2022 [API] INFO: Connected to MongoDB
+13:28:17 20/01/2022 [API] INFO: Listening on port 4000 ...
+13:28:17 20/01/2022 [API] INFO: Connected to MongoDB
+13:54:28 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+13:54:28 20/01/2022 [API] WARN: Using default configuration
+13:54:28 20/01/2022 [API] INFO: Listening on port 4000 ...
+13:54:28 20/01/2022 [API] INFO: Connected to MongoDB
+13:55:42 20/01/2022 [API] [33MWARN[39M: Some environment variables may not been set correctly.
+13:55:42 20/01/2022 [API] [33MWARN[39M: Using default configuration
+13:55:43 20/01/2022 [API] [32MINFO[39M: Listening on port 4000 ...
+13:55:43 20/01/2022 [API] [32MINFO[39M: Connected to MongoDB
+13:55:46 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+13:55:46 20/01/2022 [API] WARN: Using default configuration
+13:55:46 20/01/2022 [API] INFO: Listening on port 4000 ...
+13:55:47 20/01/2022 [API] INFO: Connected to MongoDB
+13:57:20 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+13:57:20 20/01/2022 [API] WARN: Using default configuration
+13:57:20 20/01/2022 [API] INFO: Listening on port 4000 ...
+13:57:20 20/01/2022 [API] INFO: Connected to MongoDB
+14:06:37 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+14:06:37 20/01/2022 [API] WARN: Using default configuration
+14:06:37 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:06:37 20/01/2022 [API] INFO: Connected to MongoDB
+14:06:48 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+14:06:48 20/01/2022 [API] WARN: Using default configuration
+14:06:48 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:06:48 20/01/2022 [API] INFO: Connected to MongoDB
+14:08:46 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+14:08:46 20/01/2022 [API] WARN: Using default configuration
+14:08:46 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:08:46 20/01/2022 [API] INFO: Connected to MongoDB
+14:10:27 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+14:10:27 20/01/2022 [API] WARN: Using default configuration
+14:10:27 20/01/2022 [API] INFO: Listening on port 5000 ...
+14:10:27 20/01/2022 [API] INFO: Connected to MongoDB
+14:10:32 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+14:10:32 20/01/2022 [API] WARN: Using default configuration
+14:10:32 20/01/2022 [API] INFO: Listening on port 10000 ...
+14:10:32 20/01/2022 [API] INFO: Connected to MongoDB
+14:10:36 20/01/2022 [API] WARN: Some environment variables may not been set correctly.
+14:10:36 20/01/2022 [API] WARN: Using default configuration
+14:10:36 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:10:36 20/01/2022 [API] INFO: Connected to MongoDB
+14:13:50 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:13:50 20/01/2022 [API] WARN: Using default configuration
+14:13:51 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:13:51 20/01/2022 [API] INFO: Connected to MongoDB
+14:14:42 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:14:42 20/01/2022 [API] WARN: Using default configuration
+14:14:42 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:14:42 20/01/2022 [API] INFO: Connected to MongoDB
+14:16:22 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:16:22 20/01/2022 [API] WARN: Using default configuration
+14:16:22 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:16:22 20/01/2022 [API] INFO: Connected to MongoDB
+14:18:08 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:18:08 20/01/2022 [API] WARN: Using default configuration
+14:18:08 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:18:08 20/01/2022 [API] INFO: Connected to MongoDB
+14:18:16 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:18:16 20/01/2022 [API] WARN: Using default configuration
+14:18:16 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:18:16 20/01/2022 [API] INFO: Connected to MongoDB
+14:18:46 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:18:46 20/01/2022 [API] WARN: Using default configuration
+14:18:46 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:18:47 20/01/2022 [API] INFO: Connected to MongoDB
+14:19:03 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:19:03 20/01/2022 [API] WARN: Using default configuration
+14:19:03 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:19:03 20/01/2022 [API] INFO: Connected to MongoDB
+14:19:22 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:19:22 20/01/2022 [API] WARN: Using default configuration
+14:19:23 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:19:23 20/01/2022 [API] INFO: Connected to MongoDB
+14:20:11 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:20:11 20/01/2022 [API] WARN: Using default configuration
+14:20:11 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:20:11 20/01/2022 [API] INFO: Connected to MongoDB
+14:20:34 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:20:34 20/01/2022 [API] WARN: Using default configuration
+14:20:34 20/01/2022 [API] INFO: Connected to MongoDB
+14:20:34 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:20:50 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:20:50 20/01/2022 [API] WARN: Using default configuration
+14:20:50 20/01/2022 [API] INFO: Connected to MongoDB
+14:20:50 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:23:11 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:23:11 20/01/2022 [API] WARN: Using default configuration
+14:23:11 20/01/2022 [API] INFO: Connected to MongoDB
+14:23:11 20/01/2022 [API] INFO: Listening on port 4000 ...
+14:24:36 20/01/2022 [API] WARN: Some environment variables may not have been set correctly.
+14:24:36 20/01/2022 [API] WARN: Using default configuration
+14:24:36 20/01/2022 [API] INFO: Connected to MongoDB
+14:24:36 20/01/2022 [API] INFO: Listening on port 4000 ...

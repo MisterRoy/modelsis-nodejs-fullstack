@@ -1,20 +1,35 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const products = require("./routes/products");
-const productTypes = require("./routes/productTypes");
-const logger = require("./logger/logger");
-const cors = require('cors')
+const express = require('express');
+const products = require('./routes/products');
+const productTypes = require('./routes/productTypes');
+const logger = require('./logger/logger');
+const cors = require('cors');
+const config = require('config');
+const { connectToDatabase } = require('./startup/database');
 
 const app = express();
 
-mongoose
-  .connect("mongodb://localhost/modelsis-db")
-  .then(() => logger.info("Connected to MongoDB"))
-  .catch(() => logger.info("Connection to MongoDB failed..."));
+let connectString = 'mongodb://localhost/modelsis-db';
+let runningPort = 4000;
 
-app.use(cors())
+try {
+  runningPort = config.get('MODELSIS_PORT');
+  const username = config.get('MODELSIS_BD_USERNAME');
+  const password = config.get('MODELSIS_BD_PASSWORD');
+  const host = config.get('MODELSIS_BD_HOST');
+  const port = config.get('MODELSIS_BD_PORT');
+  connectString = `mongodb://${username}:${password}@${host}:${port}/$modelsis-db`;
+} catch (error) {
+  logger.warn('Some environment variables may not have been set correctly.');
+  logger.warn('Using default configuration');
+}
+
+connectToDatabase(connectString);
+
+app.use(cors());
 app.use(express.json());
-app.use("/api/products", products);
-app.use("/api/productType", productTypes);
+app.use('/api/products', products);
+app.use('/api/productType', productTypes);
 
-app.listen(4000, () => logger.info("Listening on port 4000 ..."));
+app.listen(runningPort, () =>
+  logger.info(`Listening on port ${runningPort} ...`)
+);

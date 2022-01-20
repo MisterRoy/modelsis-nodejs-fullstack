@@ -1,0 +1,9 @@
+{
+  "database": {
+    "username": "MODELSIS_BD_USERNAME",
+    "password": "MODELSIS_BD_PASSWORD",
+    "host": "MODELSIS_BD_HOST",
+    "port": "MODELSIS_BD_PORT"
+  },
+  "port": "MODELSIS_PORT"
+}
