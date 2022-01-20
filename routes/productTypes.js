@@ -3,6 +3,19 @@ const { validateProductType, ProductType } = require('../models/productType');
 const router = express.Router();
 const logger = require('../logger/logger');
 
+/**
+ * @swagger
+ * /api/productType:
+ *  get:
+ *    description: Get all product types
+ *    responses:
+ *      '200':
+ *        description: Successful response
+ *      '400':
+ *        description: Bad request
+ *      '404':
+ *        description: Products not found
+ */
 router.get('/', async (req, res) => {
   try {
     const productTypes = await ProductType.find();
@@ -15,6 +28,19 @@ router.get('/', async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/productType:
+ *  post:
+ *    description: Create a product type
+ *    responses:
+ *      '201':
+ *        description: Successful response
+ *      '400':
+ *        description: Bad request
+ *      '500':
+ *        description: Internal error
+ */
 router.post('/', async (req, res) => {
   const { error } = validateProductType(req.body);
   if (error) return res.status(400).send(error.details[0].message);

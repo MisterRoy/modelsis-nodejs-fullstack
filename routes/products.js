@@ -4,6 +4,19 @@ const { ProductType } = require('../models/productType');
 const router = express.Router();
 const logger = require('../logger/logger');
 
+/**
+ * @swagger
+ * /api/products:
+ *  get:
+ *    description: Get all products
+ *    responses:
+ *      '200':
+ *        description: Successful response
+ *      '400':
+ *        description: Bad request
+ *      '404':
+ *        description: Products not found
+ */
 router.get('/', async (req, res) => {
   try {
     const products = await Product.find();
@@ -16,6 +29,19 @@ router.get('/', async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/products/{id}:
+ *  get:
+ *    description: Get a specific product
+ *    responses:
+ *      '200':
+ *        description: Successful response
+ *      '400':
+ *        description: Bad request
+ *      '404':
+ *        description: Product not found
+ */
 router.get('/:id', async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);
@@ -27,6 +53,19 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/products:
+ *  post:
+ *    description: Create a product
+ *    responses:
+ *      '201':
+ *        description: Successful response
+ *      '400':
+ *        description: Bad request
+ *      '500':
+ *        description: Internal error
+ */
 router.post('/', async (req, res) => {
   const { error } = validateProduct(req.body);
   if (error) return res.status(400).send(error.details[0].message);
@@ -63,6 +102,19 @@ router.post('/', async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/products:
+ *  delete:
+ *    description: Create a product
+ *    responses:
+ *      '200':
+ *        description: Successful response
+ *      '404':
+ *        description: Invalid id
+ *      '500':
+ *        description: Internal error
+ */
 router.delete('/:id', async (req, res) => {
   try {
     const product = await Product.findByIdAndRemove(req.params.id);
@@ -75,6 +127,19 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/products:
+ *  put:
+ *    description: Create a product
+ *    responses:
+ *      '200':
+ *        description: Successful response
+ *      '400':
+ *        description: The product already exists
+ *      '500':
+ *        description: Internal error
+ */
 router.put('/:id', async (req, res) => {
   const { error } = validateProduct(req.body);
   if (error) return res.status(400).send(error.details[0].message);

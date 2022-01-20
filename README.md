@@ -11,12 +11,12 @@ It consists in building a basic fullstack wep app.
 The current repository refers to the backend side.</div>
 
 
-
 ## ⛏️Built With
 
 - [Node.js](https://nodejs.org/) - Runtine environment
 - [Epxress.js](https://expressjs.com/) - Runtine environment
 - [MongoDB](https://www.mongodb.com/) - Database
+
 
 ## ⛓️Prerequisites
 
@@ -66,3 +66,6 @@ or
 ```
 yarn start
 ```
+
+## 📙Documentation
+Available at /api
