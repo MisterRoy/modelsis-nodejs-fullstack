@@ -25,6 +25,11 @@ The current repository refers to the backend side.</div>
 
 ## 🚀Run
 
+#### Clone repository
+```
+git clone https://github.com/MisterRoy/modelsis-nodejs-fullstack.git
+```
+
 #### Install dependencies
 ```
 npm install
@@ -40,6 +45,7 @@ mongod
 ```
 
 #### Set environment variables (Optionnal)
+You may define your database credentials if necessary. By default, the app assumes you use default configuration i.e no username, no password and using port 27017.
 - On Linux / Mac OS
 ```
 export MODELSIS_BD_USERNAME=your_database_username
@@ -58,14 +64,9 @@ set MODELSIS_BD_PORT=your_database_port
 set MODELSIS_PORT=your_running_port
 ```
 #### Launch
-Ensure that port 4000 is free
-```
-npm start
-```
-or
-```
-yarn start
-```
+Ensure that port 4000 is free and run
+```npm start``` or ```yarn start```
 
 ## 📙Documentation
-Available at /api
+Available at http://localhost:4000/api
+![demo_doc](demo_doc.png)

@@ -6,7 +6,7 @@ const swaggerOptions = {
     info: {
       title: 'ModelSis Fullstack challenge - API',
       description:
-        'This is a challenge intiated by ModelSis. It consists in building a basic fullstack wep app. The current repository refers to the backend side.',
+        'This is a challenge intiated by ModelSis. It consists in building a basic fullstack web app. The current repository refers to the backend side.',
       contact: {
         name: 'Mister Roy',
       },
