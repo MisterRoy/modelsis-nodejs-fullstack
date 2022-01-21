@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const logger = require('../logger/logger');
 
-async function connectToDatabase(connectString) {
+function connectToDatabase(connectString) {
   try {
-    await mongoose.connect(connectString);
+    mongoose.connect(connectString);
     logger.info('Connected to MongoDB');
   } catch (error) {
     logger.error(
