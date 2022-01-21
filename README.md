@@ -7,7 +7,7 @@
 ## 🏁Description
 
 <div style="text-align: justify">This is a challenge intiated by ModelSis.
-It consists in building a basic fullstack wep app.
+It consists in building a basic fullstack web app.
 The current repository refers to the backend side.</div>
 
 
