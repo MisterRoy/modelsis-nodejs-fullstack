@@ -44,7 +44,7 @@ yarn install
 mongod
 ```
 
-#### Set environment variables (Optionnal)
+#### Set environment variables (Optional)
 You may define your database credentials if necessary. By default, the app assumes you use default configuration i.e no username, no password and using port 27017.
 - On Linux / Mac OS
 ```
@@ -65,7 +65,13 @@ set MODELSIS_PORT=your_running_port
 ```
 #### Launch
 Ensure that port 4000 is free and run
-```npm start``` or ```yarn start```
+```
+npm start
+```
+or
+```
+yarn start
+```
 
 ## 📙Documentation
 Available at http://localhost:4000/api
