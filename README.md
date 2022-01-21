@@ -69,4 +69,4 @@ Ensure that port 4000 is free and run
 
 ## 📙Documentation
 Available at http://localhost:4000/api
-![demo_doc](demo_doc.png)
+![demo_doc](demo_doc.PNG)
